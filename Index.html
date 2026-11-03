@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <main class="game-container">
+
+
+        <div id="hud" class="hud" style="display: none;">
+            <div class="hud-item">
+                <span class="label">STATUS</span>
+                <span class="status">● SURVIVING</span>
+            </div>
+            <div class="hud-item">
+                <span class="label">SCORE</span>
+                <span id="score">0</span>
+            </div>
+            <div class="hud-item">
+                <span class="label">HEALTH</span>
+                <span id="health">100 HP</span>
+            </div>
+        </div>
+
+        <div class="canvas-wrapper" style="position: relative;">
+            <canvas id="gameCanvas" width="900" height="550"></canvas>
+
+            <div id="startScreen"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(9, 10, 9, 0.98); display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10;">
+                <h1 style="color: #deded5; font-size: 46px; font-weight: 900; letter-spacing: 8px; margin: 0 0 10px 0;">
+                    THE LAST <span style="color: #a72b32;">OF US</span></h1>
+                <p style="color: #85877f; font-size: 12px; letter-spacing: 5px; margin-bottom: 35px;">QUARANTINE
+                    SURVIVAL PROTOCOL</p>
+                <button id="startBtn"
+                    style="background: #a72b32; color: #fff; border: none; padding: 14px 36px; font-size: 14px; font-weight: bold; letter-spacing: 3px; cursor: pointer; border-radius: 2px; box-shadow: 0 0 20px rgba(167,43,50,0.6);">ENTER
+                    THE ZONE</button>
+                <p style="color: #b1b2a9; font-size: 11px; letter-spacing: 2px; margin-top: 25px;">MOVE: WASD / ARROWS
+                </p>
+            </div>
+        </div>
+
+        <div class="game-footer">
+            <p class="instructions">
+                MOVE: WASD / ARROW KEYS
+            </p>
+            <p class="warning">
+                ⚠ QUARANTINE ZONE — PROCEED AT YOUR OWN RISK
+            </p>
+        </div>
+
+    </main>
+    <script src="game.js"></script>
+
+</body>
+
+</html>
